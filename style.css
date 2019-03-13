@@ -1,0 +1,21 @@
+
+		h1 {
+			text-align: center;
+		}
+		.grid-container{
+		    display: grid;
+		    height: 500px;
+		    margin: auto;
+		    width: 75%;
+		    border: 10px solid blue;
+		}
+
+		.grid-container div{
+		    background-color: rgb(240, 239, 239);
+		    border: 1px solid black;
+		}	
+
+		.button-container {
+			text-align: center;
+			padding: 3%;
+		}
