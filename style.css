@@ -7,7 +7,8 @@
 		    height: 500px;
 		    margin: auto;
 		    width: 75%;
-		    border: 10px solid blue;
+		    border: 10px solid darkred;
+		    margin-bottom: 10%;
 		}
 
 		.grid-container div{
@@ -17,5 +18,10 @@
 
 		.button-container {
 			text-align: center;
-			padding: 3%;
+			padding-bottom: 3%;
+		}
+
+		.btn{
+			margin-left: 10%;
+			margin-right: 10%;
 		}
