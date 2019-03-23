@@ -1,4 +1,11 @@
 
+document.addEventListener("DOMContentLoaded", function(){
+    drawGrid(GridSide, GridTotal);
+    blackOnHover();
+});
+
+
+
 
 function drawGrid(gridSide, gridTotal) {
     for(i=0; i<gridTotal; i++){
@@ -19,14 +26,16 @@ function blackOnHover() {
 }
 
 function gameSetup() {
-	document.getElementById('reset').addEventListener('click', function(){
-		var divs = document.querySelectorAll('.grid-container div')
-    	divs.forEach((div) => {
-    		div.setAttribute('style', 'background: white');
-    	});
-	});
+	var divs = document.querySelectorAll('.grid-container div')
+    divs.forEach((div) => {
+    	div.setAttribute('style', 'background: white');
+    });
 }
 
+var resetButton = document.getElementById('reset');
+    resetButton.addEventListener('click', function(){
+        gameSetup();
+});
 
 //setup
 const gridContainer = document.querySelector('.grid-container');
@@ -35,9 +44,9 @@ gridContainer.setAttribute('style', 'grid: repeat(' + GridSide + ',auto) / repea
 const GridTotal = GridSide * GridSide;  
 
 //create grid
-drawGrid(GridSide, GridTotal);
+//drawGrid(GridSide, GridTotal);
 
-blackOnHover();
+//blackOnHover();
 
-gameSetup();
+//gameSetup();
 
