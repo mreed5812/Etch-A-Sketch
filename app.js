@@ -25,6 +25,15 @@ function blackOnHover() {
     });
 }
 
+function erase(){
+    var divs = document.querySelectorAll('.grid-container div');
+    divs.forEach((div) => {
+        div.addEventListener('mouseover', function(e) {
+            e.target.setAttribute('style', 'background: white');
+        });
+    });
+}
+
 function gameSetup() {
 	var divs = document.querySelectorAll('.grid-container div')
     divs.forEach((div) => {
@@ -36,6 +45,11 @@ var resetButton = document.getElementById('reset');
     resetButton.addEventListener('click', function(){
         gameSetup();
 });
+
+var eraserButton = document.getElementById('erase');
+    eraserButton.addEventListener('click', function(){
+        erase();
+    });
 
 //setup
 const gridContainer = document.querySelector('.grid-container');
