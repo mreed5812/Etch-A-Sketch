@@ -5,10 +5,10 @@
 Created Etch-A-Sketch to work on DOM manipulation and grid creation.
 
 ## Technologies
--HTML
--CSS
--Javascript
--Bootstrap
+- HTML
+- CSS
+- Javascript
+- Bootstrap
 
 ## Installation
 ```
